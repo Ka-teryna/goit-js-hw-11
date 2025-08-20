@@ -17,16 +17,15 @@ export function createGallery(images) {
         <img src="${webformatURL}" alt="${tags}" loading="lazy" />
       </a>
       <div class="info">
-        <p><b>Likes:</b> ${likes}</p>
-        <p><b>Views:</b> ${views}</p>
-        <p><b>Comments:</b> ${comments}</p>
-        <p><b>Downloads:</b> ${downloads}</p>
+        <p><b>Likes</b><span>${likes}</span></p>
+        <p><b>Views</b><span>${views}</span></p>
+        <p><b>Comments</b><span>${comments}</span></p>
+        <p><b>Downloads</b><span>${downloads}</span></p>
       </div>
     </li>
   `).join('');
 
   galleryEl.insertAdjacentHTML('beforeend', markup);
-
   lightbox.refresh();
 }
 
